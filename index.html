@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>미궁 밀당 · Maze Push</title>
+<meta name="description" content="미로 카드를 밀어 길을 만들고, 몬스터를 피해 보물을 찾아 집으로 돌아오는 퍼즐 게임.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#fff6e6; --ink:#4a2e16; --muted:#7a5a3a; --accent:#b8641e; --card:#fffdf8; --line:#ecd8b4; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#211a12; --ink:#f4e6cf; --muted:#cbb391; --accent:#e5b83b; --card:#2c2318; --line:#4a3a28; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 16px 64px; }
+  header { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
+  header img { width:96px; height:96px; border-radius:22px; }
+  h1 { margin:0; font-size:32px; } .tag { color:var(--muted); margin:4px 0 0; }
+  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; margin:32px 0; }
+  .shots img { width:100%; border-radius:18px; border:3px solid var(--line); }
+  section { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:8px 24px 16px; margin-bottom:20px; }
+  h2 { font-size:20px; } p, li { color:var(--muted); } a { color:var(--accent); }
+  footer { color:var(--muted); font-size:14px; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>미궁 밀당 <small style="font-size:18px;color:var(--muted)">Maze Push</small></h1>
+      <p class="tag">밀어서 여는 보물 미로 · Treasure Maze · Slide the maze, grab the treasure</p>
+    </div>
+  </header>
+  <div class="shots">
+    <img src="shot1.jpg" alt="홈 화면"><img src="shot2.jpg" alt="미로 밀기"><img src="shot3.jpg" alt="몬스터 위험"><img src="shot4.jpg" alt="4인 대전">
+  </div>
+  <section lang="ko">
+    <h2>어떤 게임인가요?</h2>
+    <p>손에 든 미로 카드를 판 가장자리에 밀어 넣어 길을 새로 만드는 퍼즐 게임이에요. 보물 카드를 뽑아 목표를 정하고, 보물 4개를 모은 뒤 처음 출발한 집으로 돌아오면 승리!</p>
+    <ul>
+      <li>혼자 탐험: 정글·던전·사막·바닷속·설산, 50개 미궁. 몬스터와 길이 이어지면 잡혀요.</li>
+      <li>같이 탐험: 한 기기로 최대 4명, 친구나 컴퓨터와 겨뤄요.</li>
+    </ul>
+  </section>
+  <section lang="en">
+    <h2>About</h2>
+    <p>Maze Push is a sliding-tile puzzle. Insert your spare maze card from the edge to reshape the paths, draw treasure cards, collect four treasures and race home. Explore 50 mazes across five worlds solo, or play pass-and-play with up to four explorers.</p>
+  </section>
+  <footer>
+    <a href="privacy.html">개인정보처리방침 · Privacy Policy</a> · 문의 <a href="mailto:liveasfilm@gmail.com">liveasfilm@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
